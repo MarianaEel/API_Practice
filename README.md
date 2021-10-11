@@ -28,7 +28,15 @@ Extract tweets about one topic and return people's view and feeling about it.
 
 **Modular Design**
 
-1. Front: A Linux version for enterprise use and a mobile version for individual use.
-2. Sever: 
-   - For individual version none cloud server is provided. The amount need for calculation and storage is small and can be covered by local device.
-   - For enterprise user, cloud server deployment is provided. Google cloud server or AZURE can provide strong server for large quantity data processing and 
+1. Front: A Linux version for enterprise use and a mobile version (IOS, Android) for individual use.
+2. Cloud computing: 
+   - For individual version none cloud server computation is provided. The amount need for calculation and storage is small and can be covered by local device.
+   - For enterprise user, cloud server deployment is provided. Google cloud server or AZURE can provide strong server for large quantity data processing capability.
+
+3. Storage:
+   - For individual version, storage is at local, but we provide user a cloud backup of their daily analysis user data. 
+4. Data encryption:
+   - The front shall be able to encrypt user data before updating them to the server. 
+   - The server shall be able to decrypt data to process and encrypt data and analysis for return.
+5. Following with twitter topic and event
+   - Both individuals and enterprise user shall be able to follow the sentimental analysis of one topic or event. They shall not being required to re-enter information again and again.
